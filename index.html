@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>沈子涵作品集</title>
+  <meta name="description" content="沈子涵 · 港大 EEE · 机器人/通信仿真方向作品集">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%231f6f8b"/><text x="32" y="40" text-anchor="middle" font-size="24" font-family="Arial" fill="white">SZH</text></svg>'>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #5b6875;
+      --line: #d9e2ea;
+      --bg: #f7f9fb;
+      --panel: #ffffff;
+      --blue: #1f6f8b;
+      --green: #2f7d5c;
+      --orange: #a74718;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, "Microsoft YaHei", sans-serif; color: var(--ink); background: var(--bg); }
+    main { max-width: 1120px; margin: 0 auto; padding: 52px 22px 40px; }
+    header { padding: 34px 0 28px; border-bottom: 1px solid var(--line); }
+    h1 { margin: 0; font-size: 42px; line-height: 1.18; letter-spacing: 0; }
+    h2 { margin: 34px 0 14px; font-size: 24px; }
+    p { line-height: 1.75; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .subtitle { color: var(--muted); max-width: 760px; font-size: 17px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: #fff; color: #334155; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; min-height: 210px; display: flex; flex-direction: column; justify-content: space-between; }
+    .card h3 { margin: 0 0 8px; font-size: 19px; }
+    .card p { margin: 0; color: var(--muted); }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .button { border: 1px solid currentColor; border-radius: 6px; padding: 9px 12px; background: #fff; }
+    .blue { color: var(--blue); }
+    .green { color: var(--green); }
+    .orange { color: var(--orange); }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+    footer { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 18px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>沈子涵 · 港大 EEE · 机器人/通信仿真方向</h1>
+      <p class="subtitle">面向中文岗位投递的公开作品集主页，集中展示机器人控制、嵌入式联调、仿真复现和工程文档能力。</p>
+      <div class="contact">
+        <a class="pill" href="mailto:2072475827@qq.com">2072475827@qq.com</a>
+        <a class="pill" href="https://drpress.org/ojs/index.php/HSET/article/view/28966">Related Paper</a>
+        <a class="pill" href="https://github.com/zihanshen29">GitHub</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">项目展示</h2>
+      <div class="grid">
+        <article class="card">
+          <div>
+            <h3>A1 机器人 Showcase</h3>
+            <p>四足机器人强化学习/仿真训练方向展示，作为机器人方向作品集入口之一。</p>
+          </div>
+          <div class="links">
+            <a class="button green" href="https://zihanshen29.github.io/robot-a1-showcase/">查看项目页</a>
+            <a class="button green" href="https://github.com/zihanshen29/robot-a1-showcase">GitHub 仓库</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3>5G FFR 仿真复现</h3>
+            <p>基于合成数据的 5G 分数频率复用仿真展示，覆盖 SNR sweep、边缘 SINR、容量趋势和论文风格图表。</p>
+          </div>
+          <div class="links">
+            <a class="button blue" href="https://zihanshen29.github.io/5g-ffr-showcase/">查看项目页</a>
+            <a class="button blue" href="https://github.com/zihanshen29/5g-ffr-showcase">GitHub 仓库</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3>Arduino 取放分拣机器人</h3>
+            <p>Arduino Mega 2560 移动取放/分拣机器人公开展示版，包含 sanitized firmware skeleton、合成日志和 Python 指标复盘。</p>
+          </div>
+          <div class="links">
+            <a class="button orange" href="https://zihanshen29.github.io/arduino-mega-pick-place-showcase/">查看项目页</a>
+            <a class="button orange" href="https://github.com/zihanshen29/arduino-mega-pick-place-showcase">GitHub 仓库</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="resume">
+      <h2 id="resume">Resume</h2>
+      <div class="panel">
+        <p>简历 PDF 见邮件附件/可按需提供。此主页不放置占位 PDF，避免产生无效下载链接。</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <div class="panel">
+        <p>邮箱：<a href="mailto:2072475827@qq.com">2072475827@qq.com</a></p>
+        <p>论文链接：<a href="https://drpress.org/ojs/index.php/HSET/article/view/28966">Application of Fractional Frequency Reuse in Interference Mitigation for 5G Cellular Networks</a></p>
+      </div>
+    </section>
+
+    <footer>
+      沈子涵 Showcase Series · 机器人 / 嵌入式 / 通信仿真
+    </footer>
+  </main>
+</body>
+</html>
