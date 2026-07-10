@@ -31,6 +31,7 @@
     .pill { border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: #fff; color: #334155; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
     .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; min-height: 210px; display: flex; flex-direction: column; justify-content: space-between; }
+    .cover { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 12px; background: #f8fafc; }
     .card h3 { margin: 0 0 8px; font-size: 19px; }
     .card p { margin: 0; color: var(--muted); }
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
@@ -62,6 +63,7 @@
       <div class="grid">
         <article class="card">
           <div>
+            <img class="cover" src="./assets/cover_a1_rl_policy.jpg" alt="Unitree A1 Isaac Lab 仿真回放封面">
             <h3>A1 机器人 Showcase</h3>
             <p>分层 RL+MPC 仿真控制链路；600 步 PPO +0.9338 m ≈ 手写基线 +0.9339 m；定位约 872 步长时域失稳机制链，经历 16 次训练系统排错。</p>
             <div class="tags" aria-label="A1 项目标签">
@@ -79,6 +81,7 @@
 
         <article class="card">
           <div>
+            <img class="cover" src="./assets/cover_5g_capacity_verified.jpg" alt="5G FFR 私有 MATLAB 复现实测图表封面">
             <h3>5G FFR 仿真复现</h3>
             <p>第一作者综述论文（CSIC 2024）+ MATLAB 自主复现 19-cell 仿真；实测 FFR 使固定分配边缘 SINR +13%，趋势断言脚本化全通过。</p>
             <div class="tags" aria-label="5G 项目标签">
@@ -96,6 +99,7 @@
 
         <article class="card">
           <div>
+            <img class="cover" src="./assets/cover_arduino_dual_block.jpg" alt="Arduino 双物块搬运实物照片封面">
             <h3>Arduino 取放分拣机器人</h3>
             <p>6 人团队队长 + 软件工程师；FSM 多传感器控制；转弯成功率 30%→接近 100%，云台双物块方案省时 43%。</p>
             <div class="tags" aria-label="Arduino 项目标签">
