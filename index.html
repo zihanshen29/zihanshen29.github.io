@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>沈子涵作品集</title>
-  <meta name="description" content="沈子涵 · 通信工程本科 · 港大 EEE 硕士 · 通信测试 / 系统测试 / 测试开发 / 嵌入式测试作品集">
+  <meta name="description" content="沈子涵 · 通信工程本科 · 港大 EEE 硕士 · 机器人控制 / 解决方案 / 嵌入式软件作品集">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317202a'/%3E%3Cpath d='M17 39c8-13 22-13 30 0' fill='none' stroke='%2369d2e7' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='42' r='6' fill='%23f4d35e'/%3E%3Ccircle cx='32' cy='25' r='7' fill='%23ffffff'/%3E%3Ccircle cx='44' cy='42' r='6' fill='%232f7d5c'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -26,14 +26,14 @@
     p { line-height: 1.75; }
     a { color: var(--blue); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .subtitle { color: var(--muted); max-width: 760px; font-size: 17px; }
-    .contact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: #fff; color: #334155; }
+    .subtitle { color: var(--muted); max-width: 760px; font-size: 17px; overflow-wrap: anywhere; }
+    .contact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; max-width: 100%; min-width: 0; }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: #fff; color: #334155; max-width: 100%; overflow-wrap: anywhere; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
-    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; min-height: 210px; display: flex; flex-direction: column; justify-content: space-between; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; min-height: 210px; display: flex; flex-direction: column; justify-content: space-between; min-width: 0; }
     .cover { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 12px; background: #f8fafc; }
     .card h3 { margin: 0 0 8px; font-size: 19px; }
-    .card p { margin: 0; color: var(--muted); }
+    .card p { margin: 0; color: var(--muted); overflow-wrap: anywhere; }
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
     .tag { border: 1px solid var(--line); border-radius: 999px; padding: 5px 9px; color: #334155; background: #f8fafc; font-size: 13px; }
     .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
@@ -43,14 +43,26 @@
     .orange { color: var(--orange); }
     .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
     footer { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 18px; color: var(--muted); }
+    @media (max-width: 640px) {
+      main { width: 100%; max-width: 100%; padding: 42px 16px 32px; overflow-x: hidden; }
+      h1 { font-size: 36px; }
+      .contact, .links, .tags { width: 100%; min-width: 0; }
+      .contact { flex-direction: column; align-items: flex-start; }
+      .grid { grid-template-columns: minmax(0, 1fr); }
+      .pill, .button, .tag { max-width: 100%; white-space: normal; }
+    }
+    @media (max-width: 430px) {
+      header, section, footer, .subtitle, .grid, .card, .panel { width: calc(100vw - 32px); max-width: calc(100vw - 32px); }
+      .cover { width: 100%; max-width: 100%; }
+    }
   </style>
 </head>
 <body>
   <main>
     <header>
       <h1>沈子涵</h1>
-      <p class="subtitle">通信工程本科 · 港大 EEE 硕士（2026.09 入学）· 求职方向：通信测试 / 系统测试 / 测试开发 / 嵌入式测试。</p>
-      <p class="subtitle">作品集围绕问题复现、日志分析、联调定位和工程落地展开，机器人控制、通信仿真和嵌入式项目作为可核查的项目证据。</p>
+      <p class="subtitle">通信工程本科 · 港大 EEE 硕士（2026.09 入学）· 目标岗位：机器人控制算法工程师 / 解决方案工程师 / 嵌入式软件开发。</p>
+      <p class="subtitle">聚焦机器人控制、嵌入式系统与工程落地；项目覆盖 RL+MPC 仿真控制、Arduino 多传感器联调、5G 系统级仿真与 C 语言二进制数据处理。</p>
       <div class="contact">
         <a class="pill" href="mailto:2072475827@qq.com">2072475827@qq.com</a>
         <a class="pill" href="https://drpress.org/ojs/index.php/HSET/article/view/28966">Related Paper</a>
@@ -64,7 +76,7 @@
         <article class="card">
           <div>
             <img class="cover" src="./assets/cover_a1_rl_policy.jpg" alt="Unitree A1 Isaac Lab 仿真回放封面">
-            <h3>A1 机器人 Showcase</h3>
+            <h3>Unitree A1 仿真控制</h3>
             <p>分层 RL+MPC 仿真控制链路；600 步 PPO +0.9338 m ≈ 手写基线 +0.9339 m；定位约 872 步长时域失稳机制链，经历 16 次训练系统排错。</p>
             <div class="tags" aria-label="A1 项目标签">
               <span class="tag">Unitree A1</span>
@@ -76,24 +88,6 @@
           <div class="links">
             <a class="button green" href="https://zihanshen29.github.io/robot-a1-showcase/">查看项目页</a>
             <a class="button green" href="https://github.com/zihanshen29/robot-a1-showcase">GitHub 仓库</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <img class="cover" src="./assets/cover_5g_capacity_verified.jpg" alt="5G FFR 私有 MATLAB 复现实测图表封面">
-            <h3>5G FFR 仿真复现</h3>
-            <p>第一作者综述论文（CSIC 2024）+ MATLAB 自主复现 19-cell 仿真；实测 FFR 使固定分配边缘 SINR +13%，趋势断言脚本化全通过。</p>
-            <div class="tags" aria-label="5G 项目标签">
-              <span class="tag">FFR / SWF / IFR3</span>
-              <span class="tag">SNR sweep</span>
-              <span class="tag">edge SINR</span>
-              <span class="tag">paper charts</span>
-            </div>
-          </div>
-          <div class="links">
-            <a class="button blue" href="https://zihanshen29.github.io/5g-ffr-showcase/">查看项目页</a>
-            <a class="button blue" href="https://github.com/zihanshen29/5g-ffr-showcase">GitHub 仓库</a>
           </div>
         </article>
 
@@ -112,6 +106,24 @@
           <div class="links">
             <a class="button orange" href="https://zihanshen29.github.io/arduino-mega-pick-place-showcase/">查看项目页</a>
             <a class="button orange" href="https://github.com/zihanshen29/arduino-mega-pick-place-showcase">GitHub 仓库</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <img class="cover" src="./assets/cover_5g_capacity_verified.jpg" alt="5G FFR 私有 MATLAB 复现实测图表封面">
+            <h3>5G FFR 仿真复现</h3>
+            <p>第一作者综述论文（CSIC 2024）+ MATLAB 自主复现 19-cell 仿真；实测 FFR 使固定分配边缘 SINR +13%，趋势断言脚本化全通过。</p>
+            <div class="tags" aria-label="5G 项目标签">
+              <span class="tag">FFR / SWF / IFR3</span>
+              <span class="tag">SNR sweep</span>
+              <span class="tag">edge SINR</span>
+              <span class="tag">paper charts</span>
+            </div>
+          </div>
+          <div class="links">
+            <a class="button blue" href="https://zihanshen29.github.io/5g-ffr-showcase/">查看项目页</a>
+            <a class="button blue" href="https://github.com/zihanshen29/5g-ffr-showcase">GitHub 仓库</a>
           </div>
         </article>
       </div>
@@ -136,7 +148,7 @@
     </section>
 
     <footer>
-      沈子涵 Showcase Series · 通信测试 / 系统测试 / 嵌入式测试 · 最近更新：2026-07
+      沈子涵 Showcase Series · 机器人控制 / 嵌入式系统 / 通信仿真 · 最近更新：2026-07
     </footer>
   </main>
 </body>
